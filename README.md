@@ -1,8 +1,15 @@
-## Welcome to GitHub Pages
+![1/cover.png](https://logo.pyfunc.com/1/cover.png)
 
-+ [pyfunc/www](https://github.com/pyfunc/www)
+# Logotyp pyfunc.com
 
-+ [Welcome pyFunc ](https://www.pyfunc.com/)
++ [Landing page: www.pyfunc.com](https://www.pyfunc.com/)
++ [Dokumentacja](https://docs.pyfunc.com/)
++ [Logop.pyfunc.com](https://logo.pyfunc.com/)
+
+
++ [git pyfunc/www](https://github.com/pyfunc/www)
+
+
 
 
 ---
