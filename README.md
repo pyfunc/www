@@ -3,7 +3,7 @@
 # [www.pyfunc.com](https://www.pyfunc.com/)
 
 + [Dokumentacja](https://docs.pyfunc.com/)
-+ 
+
 + [Logop.pyfunc.com](https://logo.pyfunc.com/)
 
 
