@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Base Styles */
+@layer base {
+    :root {
+        /* PyFunc Color Palette */
+        --color-pyfunc-green-50: #e8f5e9;
+        --color-pyfunc-green-100: #c8e6c9;
+        --color-pyfunc-green-200: #a5d6a7;
+        --color-pyfunc-green-300: #81c784;
+        --color-pyfunc-green-400: #66bb6a;
+        --color-pyfunc-green-500: #4caf50;
+        --color-pyfunc-green-600: #43a047;
+        --color-pyfunc-green-700: #388e3c;
+        --color-pyfunc-green-800: #2e7d32;
+        --color-pyfunc-green-900: #1b5e20;
+
+        /* Dark Mode Colors */
+        --color-dark-50: #1a202c;
+        --color-dark-100: #171923;
+        --color-dark-200: #2d3748;
+        --color-dark-300: #4a5568;
+        --color-dark-400: #718096;
+        --color-dark-500: #4a5568;
+        --color-dark-600: #2d3748;
+        --color-dark-700: #1a202c;
+        --color-dark-800: #171923;
+        --color-dark-900: #0d1117;
+    }
+
+    /* Global Defaults */
+    html {
+        scroll-behavior: smooth;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        @apply bg-dark-900 text-gray-100;
+    }
+}
+
+/* Custom Component Styles */
+@layer components {
+    /* Project Card */
+    .project-card {
+        @apply bg-dark-800 p-6 rounded-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg;
+    }
+
+    /* Topic Badge */
+    .topic-badge {
+        @apply bg-pyfunc-green-900 text-pyfunc-green-300 px-2 py-1 rounded-full text-xs mr-2 mb-2 inline-block;
+    }
+
+    /* Code Background */
+    .code-bg {
+        @apply bg-opacity-20 backdrop-blur-sm;
+        background: linear-gradient(135deg, rgba(76,175,80,0.1) 0%, rgba(45,55,72,0.3) 100%);
+    }
+}
+
+/* Custom Utility Styles */
+@layer utilities {
+    /* Custom Scrollbar */
+    .custom-scrollbar::-webkit-scrollbar {
+        @apply w-2 bg-dark-700;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-pyfunc-green-500 rounded-full;
+    }
+
+    /* Gradient Text */
+    .gradient-text {
+        background: linear-gradient(to right, #4caf50, #2e7d32);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+/* Animation Utilities */
+@layer utilities {
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+}

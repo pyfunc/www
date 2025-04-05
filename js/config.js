@@ -9,7 +9,7 @@ const PYFUNC_CONFIG = {
         github: 'https://github.com/pyfunc',
         discord: 'https://discord.gg/pyfunc',
         twitter: 'https://twitter.com/pyfunc',
-        linkedin: 'https://linkedin.com/company/pyfunc'
+        // linkedin: 'https://linkedin.com/company/pyfunc'
     },
 
     // Repository Configuration
